@@ -1,15 +1,21 @@
 ## Git Fork & Clone
 
-If you have a fork of the Edda repo and you see the following error when trying to start sbt:
+If you need to fork and clone the Edda repo to address the following 'java.lang.RuntimeException' error when trying to start sbt:
 
 ```
 java.lang.RuntimeException: Setting value cannot be null: {file:.../edda/}/*:version
 ```
 
-Then you need to add the upstream repository and fetch it, so that you have tag data available:
+Next, you need to clone your forked repository to your local machine using the following command:
+
+```
+git clone https://github.com/YourUsername/edda.git
+```
+# If you have already cloned the repository, navigate to the local repository using 'cd edda'.
 
 ```bash
 git remote add upstream https://github.com/Netflix/edda.git
+# First, fork the Edda repository on GitHub by clicking on the 'Fork' button.
 git fetch upstream
 ```
 
