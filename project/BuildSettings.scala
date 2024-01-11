@@ -23,10 +23,10 @@ object BuildSettings {
 
   lazy val buildSettings: Seq[Def.Setting[_]] = baseSettings ++ Seq(
     organization := "com.netflix.edda",
-    scalaVersion := "2.11.12",
+    scalaVersion := "2.12.14",
     scalacOptions ++= BuildSettings.compilerFlags,
     crossPaths := true,
-    crossScalaVersions := Seq("2.11.12"),
+    crossScalaVersions := Seq("2.12.14"),
     sourcesInBase := false,
     exportJars := true, // Needed for one-jar, with multi-project
     externalResolvers := BuildSettings.resolvers,
