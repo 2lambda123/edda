@@ -1,0 +1,34 @@
+name: github_actions.yml
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up environment
+        run: |
+          # Set up environment variables here
+
+      - name: Build project
+        run: |
+          # Build commands or scripts here
+
+      - name: Run tests
+        run: |
+          # Run unit tests here
+
+      - name: Deploy application
+        run: |
+          # Deployment commands or scripts here
+
+      - name: Notify on success or failure
+        run: |
+          # Notification or status update commands here
